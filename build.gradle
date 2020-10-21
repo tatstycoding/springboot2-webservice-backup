@@ -26,5 +26,23 @@ repositories {
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
+
+    compile('org.projectlombok:lombok')
+
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+
+    compile('com.h2database:h2')
+
+    compile('org.springframework.boot:spring-boot-starter-mustache')
+
+    compile('org.springframework.boot:spring-boot-starter-oauth2-client')
+    // 소셜로그인 등 클라이언트 입장에서 소셜 기능 구현 시 필요한 의존성
+    // spring-security-oauth2-client와 spring-security-oauth2-jose를 기본으로 관리해줌.
+
+    compile('org.springframework.session:spring-session-jdbc')
+
     testCompile('org.springframework.boot:spring-boot-starter-test')
+
+    testCompile('org.springframework.security:spring-security-test')
+    //tㅡ프링 시큐리티 테스트를 위한 여러 도구를 지원한느 spring-security-test
 }
