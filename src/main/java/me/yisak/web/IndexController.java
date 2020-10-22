@@ -1,16 +1,16 @@
 package me.yisak.web;
 
-import lombok.RequiredArgsConstructor;
 import me.yisak.config.auth.LoginUser;
 import me.yisak.config.auth.dto.SessionUser;
 import me.yisak.service.posts.PostsService;
 import me.yisak.web.dto.PostsResponseDto;
+
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import javax.mail.Session;
 import javax.servlet.http.HttpSession;
 
 @RequiredArgsConstructor
